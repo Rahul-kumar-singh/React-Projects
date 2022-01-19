@@ -1,0 +1,41 @@
+.formGroup{
+    position: relative;
+}
+.formGroup i{
+    position: absolute;
+    content: '';
+    bottom: 7px;
+    right: 10px;
+    color: #000;
+    visibility: hidden;
+}
+.formGroup.error i{
+    visibility: visible;
+    color: red;
+}
+.formGroup.success i{
+    color: green;
+    visibility: visible;
+}
+.formGroup.error input{
+    border-color:red;
+}
+.formGroup.success input{
+    border-color:green;
+}
+.formGroup small{
+    visibility: hidden;
+    position: absolute;
+    content: '';
+    bottom: -22px;
+    left: 0px;
+    color: red;
+}
+.formGroup.error small{
+    visibility: visible;
+}
+.formGroup.success small{
+    visibility: hidden;
+}
+
+
