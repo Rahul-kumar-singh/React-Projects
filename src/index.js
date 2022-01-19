@@ -1,5 +1,5 @@
 import reactDom from "react-dom";
-import App from "./Projects/AddEmployees/App";
+import App from "./Projects/ExpenseTracker/App";
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.js';
 
