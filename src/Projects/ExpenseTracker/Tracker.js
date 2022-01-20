@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Tracker = ({track})=>{
-  return <div className='container'>
+  return <>{(Object.keys(track).length>0)?
+    <div className='container'>
           <div className='row'>
             <div className='col m-auto'>
               <div className='gutter-gap'>
@@ -20,7 +21,7 @@ const Tracker = ({track})=>{
                     {
                       track.map((elem,index)=>{
                         return <tr key={index}>
-                          <td>{index}</td>
+                          <td>{index+1}</td>
                           <td>{elem.tDate}</td>
                           <td>{elem.tTotal}</td>
                           <td>{elem.tAddedAmount}</td>
@@ -34,7 +35,8 @@ const Tracker = ({track})=>{
               </div>
             </div>
           </div>
-         </div>;
+         </div>
+    :null}</>
 }
 
 export default Tracker;
